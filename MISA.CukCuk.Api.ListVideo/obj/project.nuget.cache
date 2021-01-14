@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ENRd20q4pK1x9YIVC44gYqZOeMuCQgOtKV9ayd+YThVhc9C5gg6QegqVkp8LDaeu/NgSpdyhzMNeOuFNE44+Q==",
+  "dgSpecHash": "RB65eqBMUX9ZJ0wj6iuxlgo0opBYGpJuTqRNk9HCnnrpB9WB7BkNXSMnmzZ4tFyB2V7mJ8wsSRnsGWg02Dn0Zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo.csproj",
+  "projectFilePath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhson\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",

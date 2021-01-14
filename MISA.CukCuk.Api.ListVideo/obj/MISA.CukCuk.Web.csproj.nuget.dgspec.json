@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo.csproj": {}
+    "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo.csproj": {
+    "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo.csproj",
-        "projectName": "MISA.CukCuk.Api.ListVideo",
-        "projectPath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Api.ListVideo.csproj",
+        "projectUniqueName": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj",
+        "projectName": "MISA.CukCuk.Web",
+        "projectPath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj",
         "packagesPath": "C:\\Users\\nhson\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\obj\\",
         "projectStyle": "PackageReference",
