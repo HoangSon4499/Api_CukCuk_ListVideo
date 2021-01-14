@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.CukCuk.Api.ListVideo", "MISA.CukCuk.Api.ListVideo\MISA.CukCuk.Api.ListVideo.csproj", "{AB0696EC-EC0C-4EB9-9477-78C3134651ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB0696EC-EC0C-4EB9-9477-78C3134651ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0696EC-EC0C-4EB9-9477-78C3134651ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0696EC-EC0C-4EB9-9477-78C3134651ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0696EC-EC0C-4EB9-9477-78C3134651ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {314E03D8-B354-4685-88E9-6D3268F472AA}
+	EndGlobalSection
+EndGlobal
