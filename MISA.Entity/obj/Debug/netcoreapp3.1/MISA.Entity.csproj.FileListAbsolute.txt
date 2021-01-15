@@ -1,0 +1,9 @@
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\bin\Debug\netcoreapp3.1\MISA.Entity.deps.json
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\bin\Debug\netcoreapp3.1\MISA.Entity.dll
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\bin\Debug\netcoreapp3.1\MISA.Entity.pdb
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.csprojAssemblyReference.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.AssemblyInfoInputs.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.AssemblyInfo.cs
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.csproj.CoreCompileInputs.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.dll
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.Entity\obj\Debug\netcoreapp3.1\MISA.Entity.pdb

@@ -1639,6 +1639,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "MISA.ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Dapper": "2.0.78"
+        },
+        "compile": {
+          "bin/placeholder/MISA.ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MISA.ApplicationCore.dll": {}
+        }
+      },
+      "MISA.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Dapper": "2.0.78",
+          "MISA.ApplicationCore": "1.0.0",
+          "MySql.Data": "8.0.22"
+        },
+        "compile": {
+          "bin/placeholder/MISA.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MISA.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -5799,11 +5827,23 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "MISA.ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../MISA.ApplicationCore/MISA.ApplicationCore.csproj",
+      "msbuildProject": "../MISA.ApplicationCore/MISA.ApplicationCore.csproj"
+    },
+    "MISA.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MISA.Infrastructure/MISA.Infrastructure.csproj",
+      "msbuildProject": "../MISA.Infrastructure/MISA.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Dapper >= 2.0.78",
+      "MISA.ApplicationCore >= 1.0.0",
+      "MISA.Infrastructure >= 1.0.0",
       "MySql.Data >= 8.0.22",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -5834,7 +5874,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj": {
+              "projectPath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj"
+            },
+            "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.Infrastructure\\MISA.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

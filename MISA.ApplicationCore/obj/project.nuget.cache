@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pfJ2p+BWjyYmx2ersj90trsxX7KAXfehHSqfyvzC4UYvJr7T9mkgy4iBmig8Jn4p0VoE8yYMj724yQMObWb0eg==",
+  "dgSpecHash": "WfrAO/ARWEBYfB4WGIXNq2+BTpw1gD1Kr8dcA1uF5SArL3zYDK8LiCHORRg2+xk4D8fdCwuJ+aivb00CsOaKaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nhson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\nhson\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

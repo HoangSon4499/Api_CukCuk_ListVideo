@@ -1,0 +1,9 @@
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.csprojAssemblyReference.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.AssemblyInfo.cs
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\bin\Debug\netcoreapp3.1\MISA.ApplicationCore.deps.json
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\bin\Debug\netcoreapp3.1\MISA.ApplicationCore.dll
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\bin\Debug\netcoreapp3.1\MISA.ApplicationCore.pdb
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.dll
+C:\Users\nhson\Desktop\MISA\apiListVideo\Api_CukCuk_ListVideo\MISA.ApplicationCore\obj\Debug\netcoreapp3.1\MISA.ApplicationCore.pdb
