@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MISA.ApplicationCore
+namespace MISA.ApplicationCore.Services
 {
     public class CustomerService: ICustomerService
     {
@@ -67,9 +67,10 @@ namespace MISA.ApplicationCore
             return serviceResult;
         }
 
-        public Customer GetCustomerById(Guid customerId)
+        public IEnumerable<Customer> GetCustomerById(Guid customerId)
         {
-            throw new NotImplementedException();
+            var customer = _customerRepository.GetCustomerById(customerId);
+            return customer;
         }
 
         public ServiceResult UpdateCustomer(Customer customer)
@@ -79,12 +80,16 @@ namespace MISA.ApplicationCore
 
         public ServiceResult DeleteCustomer(Guid customerId)
         {
-            throw new NotImplementedException();
+            var serviceResult = new ServiceResult();
+            serviceResult.Data = _customerRepository.DeleteCustomer(customerId);
+            return serviceResult;
         }
 
         public Customer GetCustomerByCode(string customerCode)
         {
-            throw new NotImplementedException();
+            var serviceResult = new ServiceResult();
+            var customer = _customerRepository.GetCustomerByCode(customerCode);
+            return customer;
         }
 
         #endregion

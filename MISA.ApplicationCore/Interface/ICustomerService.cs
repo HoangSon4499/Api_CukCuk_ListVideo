@@ -8,7 +8,7 @@ namespace MISA.ApplicationCore.Interface
     public interface ICustomerService
     {
         IEnumerable<Customer> GetCustomers();
-        Customer GetCustomerById(Guid customerId);
+        IEnumerable<Customer> GetCustomerById(Guid customerId);
         ServiceResult AddCustomer(Customer customer);
         ServiceResult UpdateCustomer(Customer customer);
         ServiceResult DeleteCustomer(Guid customerId);

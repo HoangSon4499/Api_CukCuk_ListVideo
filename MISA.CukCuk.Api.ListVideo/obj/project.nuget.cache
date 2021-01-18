@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TOCjRSfQh5aKJEVqrupEGCnWzHiU2ZOy49sfOtUvUn5yvvINcRC+T7XZRIGRf7zm7dfhY52cKSRmCZdbD9Yn8A==",
+  "dgSpecHash": "Ytb/61xcy2kKyKRQknAiDZ9J+PjnolKmztAe6zFvGI0Um8u7QaZaXQFFDc10+fjBlGUjnVgBKByj3arVX3uhCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nhson\\Desktop\\MISA\\apiListVideo\\Api_CukCuk_ListVideo\\MISA.CukCuk.Api.ListVideo\\MISA.CukCuk.Web.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,8 @@
     "C:\\Users\\nhson\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\nhson\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\nhson\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\nhson\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MISA.ApplicationCore;
 using MISA.ApplicationCore.Interface;
+using MISA.ApplicationCore.Services;
 using MISA.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -30,8 +31,12 @@ namespace MISA.CukCuk.Api.ListVideo
         {
             services.AddSwaggerGen();
             services.AddControllers();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
 
         }
 

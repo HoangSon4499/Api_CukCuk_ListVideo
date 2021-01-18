@@ -23,7 +23,7 @@ namespace MISA.Infrastructure
             throw new NotImplementedException();
         }
 
-        public Customer GetCustomerById(Guid customerId)
+        public IEnumerable<Customer> GetCustomerById(Guid customerId)
         {
             throw new NotImplementedException();
         }
