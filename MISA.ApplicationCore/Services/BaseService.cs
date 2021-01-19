@@ -12,8 +12,7 @@ namespace MISA.ApplicationCore.Services
         public BaseService(IBaseRepository<TEntity> baseRepository){
             _baseRepository = baseRepository;
         }
-
-        public int Add(TEntity entity)
+        public virtual int Add(TEntity entity)
         {
             var addEntity = _baseRepository.Add(entity);
             return addEntity;

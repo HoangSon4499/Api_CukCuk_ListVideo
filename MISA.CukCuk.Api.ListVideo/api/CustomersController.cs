@@ -14,8 +14,8 @@ namespace MISA.CukCuk.Api.ListVideo.api
    
     public class CustomersController : BaseEntityController<Customer>
     {
-        IBaseService<Customer> _baseService;
-        public CustomersController(IBaseService<Customer> baseService):base(baseService)
+        ICustomerService _baseService;
+        public CustomersController(ICustomerService baseService):base(baseService)
         {
             _baseService = baseService;
         }

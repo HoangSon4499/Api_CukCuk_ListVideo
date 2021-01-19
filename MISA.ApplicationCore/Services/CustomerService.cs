@@ -7,89 +7,40 @@ using System.Text;
 
 namespace MISA.ApplicationCore.Services
 {
-    public class CustomerService: ICustomerService
+    public class CustomerService : BaseService<Customer>, ICustomerService
     {
-        ICustomerRepository _customerRepository;
+        IBaseRepository<Customer> _baseRepository;
+        ICustomerService _customerService;
         #region Constructor
-        public CustomerService(ICustomerRepository customerRepository)
+        public CustomerService(IBaseRepository<Customer> baseRepository) : base(baseRepository)
         {
-            _customerRepository = customerRepository;
+            _baseRepository = baseRepository;
         }
         #endregion
         #region Method
-        // lấy danh sách khách hàng
-        public IEnumerable<Customer> GetCustomers()
+        public override int Add(Customer entity)
         {
-            var customers = _customerRepository.GetCustomers();
-            return customers;
-        }
-        // thêm mới khách hàng
-        public ServiceResult AddCustomer(Customer customer)
-        {
-            var serviceResult = new ServiceResult();
-            // validate dữ liệu
-            // check trường bắt buộc nhập, nếu dữ liệu chưa hợp lệ thì trả về mô tả lỗi
-            var customerCode = customer.CustomerCode;
-            if (string.IsNullOrEmpty(customerCode))
+            // Validate thông tin
+            var isValid = true;
+            // 1. check trùng mã khách hàng
+            // logic validate
+            if (isValid==true)
             {
-                var msg = new
-                {
-                    devMsg = new { fieldName = "CustomerCode", msg = "Mã khách hàng không được phép để trống," },
-                    useMsg = "Mã khách hàng không được để trống",
-                    Code = 900
-                };
-                serviceResult.MISACode = MISACode.NotValid;
-                serviceResult.Messenger = "Mã Khách hàng không được phép để trống";
-                serviceResult.Data = msg;
-                return serviceResult;
+            return base.Add(entity);
             }
-
-            // check trùng mã
-            var res = _customerRepository.GetCustomerByCode(customerCode);
-            if (res != null)
+            else
             {
-                var msg = new
-                {
-                    devMsg = new { fieldName = "CustomerCode", msg = "Mã khách hàng đã tồn tại" },
-                    useMsg = "Mã khách đã tồn tại",
-                    Code = 900
-                };
-                serviceResult.MISACode = MISACode.NotValid;
-                serviceResult.Messenger = "Mã Khách hàng đã tồn tại";
-                serviceResult.Data = msg;
-                return serviceResult;
+                return 0;
             }
-            // thêm mới khi dữ liệu đã hợp lệ
-            var rowAffects = _customerRepository.AddCustomer(customer);
-            serviceResult.MISACode = MISACode.IsValid;
-            serviceResult.Messenger = "Thêm thành công";
-            serviceResult.Data = rowAffects;
-            return serviceResult;
         }
-
-        public IEnumerable<Customer> GetCustomerById(Guid customerId)
-        {
-            var customer = _customerRepository.GetCustomerById(customerId);
-            return customer;
-        }
-
-        public ServiceResult UpdateCustomer(Customer customer)
+        public IEnumerable<Customer> GetCustomerPaging(int limit, int offset)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResult DeleteCustomer(Guid customerId)
+        public IEnumerable<Customer> GetCustomersByGroup(Guid deparmentId)
         {
-            var serviceResult = new ServiceResult();
-            serviceResult.Data = _customerRepository.DeleteCustomer(customerId);
-            return serviceResult;
-        }
-
-        public Customer GetCustomerByCode(string customerCode)
-        {
-            var serviceResult = new ServiceResult();
-            var customer = _customerRepository.GetCustomerByCode(customerCode);
-            return customer;
+            throw new NotImplementedException();
         }
 
         #endregion
