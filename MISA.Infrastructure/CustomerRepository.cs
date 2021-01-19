@@ -19,7 +19,8 @@ namespace MISA.Infrastructure
         }
         public Customer GetCustomerByCode(string customerCode)
         {
-            throw new NotImplementedException();
+            var customerDuplicate = _dbConnection.Query<Customer>($"SELECT * FROM Customer WHERE CustomerCode = '{customerCode}'", commandType: CommandType.Text).FirstOrDefault();
+            return customerDuplicate;
         }
     }
 

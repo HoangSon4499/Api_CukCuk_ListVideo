@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 
 namespace MISA.Infrastructure
@@ -16,8 +17,8 @@ namespace MISA.Infrastructure
         #region DECLARE
         IConfiguration _configuration;
         string _connectionString = string.Empty;
-        IDbConnection _dbConnection = null;
-        string _tableName;
+        protected IDbConnection _dbConnection = null;
+        protected string _tableName;
         #endregion
         #region Constructor
         public BaseRepository(IConfiguration configuration)
@@ -81,6 +82,13 @@ namespace MISA.Infrastructure
                 }
             }
             return paramters;
+        }
+
+        public TEntity GetEntityByProperty(string propertyName, object propertyValue)
+        {
+            var query = $"SELECT * FROM {_tableName} WHERE {propertyName}='{propertyValue}'";
+            var entity = _dbConnection.Query<TEntity>(query, commandType: CommandType.Text).FirstOrDefault();
+            return entity;
         }
     }
 }

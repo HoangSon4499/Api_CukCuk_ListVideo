@@ -8,7 +8,17 @@ namespace MISA.Infrastructure
 {
     public class CustomerRepository2 : ICustomerRepository
     {
+        public int Add(Customer employee)
+        {
+            throw new NotImplementedException();
+        }
+
         public int AddCustomer(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Delete(Guid employeeId)
         {
             throw new NotImplementedException();
         }
@@ -29,6 +39,26 @@ namespace MISA.Infrastructure
         }
 
         public IEnumerable<Customer> GetCustomers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Customer> GetEntities()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Customer GetEntityById(Guid employeeId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Customer GetEntityByProperty(string propertyName, object propertyValue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Update(Customer employee)
         {
             throw new NotImplementedException();
         }

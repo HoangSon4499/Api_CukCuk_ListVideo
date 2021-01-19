@@ -1,26 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MISA.ApplicationCore.Entities
 {
-    public class Customer
+    public class Customer:BaseEntity
     {
         #region Property
         /// <summary>
         /// khóa chính
         /// </summary>
+        [PrimaryKey]
         public Guid CustomerId { get; set; }
 
         /// <summary>
         /// Mã khách hàng
         /// </summary>
+        [CheckDuplicate]
+        [Required]
+        [DisplayName("Mã Khách hàng")]
         public string CustomerCode { get; set; }
 
         /// <summary>
         /// Họ và tên
         /// </summary>
+        [Required]
+        [DisplayName("Họ và tên")]
         public string FullName { get; set; }
 
         /// <summary>
@@ -51,6 +58,8 @@ namespace MISA.ApplicationCore.Entities
         /// <summary>
         /// Số điện thoại
         /// </summary>
+        [Required]
+        [DisplayName("Số điện thoại")]
         public string PhoneNumber { get; set; }
 
         /// <summary>

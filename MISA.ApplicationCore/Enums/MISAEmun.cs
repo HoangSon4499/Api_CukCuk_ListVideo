@@ -24,4 +24,14 @@ namespace MISA.ApplicationCore.Emuns
         /// </summary>
         Sucess = 200
     }
+
+    /// <summary>
+    /// xác định trạng thái của Object
+    /// </summary>
+    public enum EntitySate
+    {
+        AddNew =1,
+        Update = 2,
+        Delete = 3
+    }
 }

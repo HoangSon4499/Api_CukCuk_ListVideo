@@ -10,7 +10,7 @@ namespace MISA.ApplicationCore.Interface
     /// interface khách hàng
     /// </summary>
     ///  created by: NGHSON (18/01/2021)
-    public interface ICustomerRepository
+    public interface ICustomerRepository: IBaseRepository<Customer>
     {
         /// <summary>
         /// lấy thông tim khách hàng theo mã khách hàng

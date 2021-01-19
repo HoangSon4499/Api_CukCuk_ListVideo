@@ -9,30 +9,34 @@ namespace MISA.ApplicationCore.Services
 {
     public class CustomerService : BaseService<Customer>, ICustomerService
     {
-        IBaseRepository<Customer> _baseRepository;
-        ICustomerService _customerService;
+        ICustomerRepository _customerRepository;
         #region Constructor
-        public CustomerService(IBaseRepository<Customer> baseRepository) : base(baseRepository)
+        public CustomerService(ICustomerRepository customerRepository) : base(customerRepository)
         {
-            _baseRepository = baseRepository;
+            _customerRepository = customerRepository;
         }
         #endregion
         #region Method
-        public override int Add(Customer entity)
-        {
-            // Validate thông tin
-            var isValid = true;
-            // 1. check trùng mã khách hàng
-            // logic validate
-            if (isValid==true)
-            {
-            return base.Add(entity);
-            }
-            else
-            {
-                return 0;
-            }
-        }
+        //public override int Add(Customer entity)
+        //{
+        //    // Validate thông tin
+        //    var isValid = true;
+        //    // 1. check trùng mã khách hàng
+        //    var CustomerDuplicate = _customerRepository.GetCustomerByCode(entity.CustomerCode);
+        //    if(CustomerDuplicate != null)
+        //    {
+        //        isValid = false;
+        //    }
+        //    // logic validate
+        //    if (isValid==true)
+        //    {
+        //    return base.Add(entity);
+        //    }
+        //    else
+        //    {
+        //        return 0;
+        //    }
+        //}
         public IEnumerable<Customer> GetCustomerPaging(int limit, int offset)
         {
             throw new NotImplementedException();
