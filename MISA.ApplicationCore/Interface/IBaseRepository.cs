@@ -12,10 +12,10 @@ namespace MISA.ApplicationCore.Interface
         /// </summary>
         /// <returns></returns>
         IEnumerable<TEntity> GetEntities();
-        TEntity GetEntityById(Guid employeeId);
-        int Add(TEntity employee);
-        int Update(TEntity employee);
-        int Delete(Guid employeeId);
-        TEntity GetEntityByProperty(string propertyName, object propertyValue);
+        TEntity GetEntityById(Guid entityId);
+        int Add(TEntity entity);
+        int Update(TEntity entity);
+        int Delete(Guid entityId);
+        TEntity GetEntityByProperty(TEntity entity, PropertyInfo property);
     }
 }

@@ -18,8 +18,8 @@ namespace MISA.ApplicationCore.Entities
         /// <summary>
         /// Mã khách hàng
         /// </summary>
-        [CheckDuplicate]
         [Required]
+        [CheckDuplicate]
         [DisplayName("Mã Khách hàng")]
         public string CustomerCode { get; set; }
 
@@ -80,17 +80,17 @@ namespace MISA.ApplicationCore.Entities
         /// <summary>
         /// Ngày thành lâp
         /// </summary>
-        public DateTime? CreatedDate { get; set; }
+        //public DateTime? CreatedDate { get; set; }
 
         /// <summary>
         /// Người thành lập
         /// </summary>
-        public string CreatedBy { get; set; }
+       // public string CreatedBy { get; set; }
 
         /// <summary>
         /// ngày sử đổi
         /// </summary>
-        public DateTime? ModifiedDate { get; set; }
+       // public DateTime? ModifiedDate { get; set; }
 
         /// <summary>
         /// Người sửa đổi

@@ -30,8 +30,8 @@ namespace MISA.CukCuk.Web.api
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
-            var entityId = _baseService.GetEntityById(id);
-            return Ok(entityId);
+            var entityById = _baseService.GetEntityById(id);
+            return Ok(entityById);
         }
 
         [HttpPost]
@@ -41,6 +41,26 @@ namespace MISA.CukCuk.Web.api
             var res = _baseService.Add(entity);
             return Ok(res);
 
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put([FromRoute] string id, [FromBody] TEntity entity)
+        {
+            var keyProperty = entity.GetType().GetProperty($"{typeof(TEntity).Name}Id");
+            if (keyProperty.PropertyType== typeof(Guid))
+            {
+                keyProperty.SetValue(entity, Guid.Parse(id));
+            }
+            else if ((keyProperty.PropertyType == typeof(int)))
+            {
+                keyProperty.SetValue(entity, int.Parse(id));
+            }
+            else
+            {
+                keyProperty.SetValue(entity,id);
+            }
+            var res = _baseService.Update(entity);
+            return Ok(res);
         }
 
         [HttpDelete("{id}")]
